@@ -1,0 +1,7 @@
+services:
+  ping-watch-notifier:
+    build:
+      context: .
+      target: runtime
+    container_name: ping-watch-notifier
+    command: ["node", "dist/index.js"]

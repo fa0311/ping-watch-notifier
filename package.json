@@ -1,0 +1,32 @@
+{
+  "name": "ping-watch-notifier",
+  "version": "0.1.0",
+  "description": "Simple ping watcher that checks host availability",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "tsx src/index.ts",
+    "start": "node dist/index.js"
+  },
+  "keywords": [
+    "ping",
+    "monitoring",
+    "notifier"
+  ],
+  "author": "fa0311",
+  "license": "MIT",
+  "packageManager": "pnpm@10.30.3",
+  "dependencies": {
+    "ping": "^1.0.0",
+    "zod": "^4.3.6",
+    "dotenv": "^17.3.1"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.4.6",
+    "@types/node": "^25.3.3",
+    "prettier": "^3.8.1",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  }
+}
